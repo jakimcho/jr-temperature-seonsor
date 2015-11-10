@@ -21,8 +21,12 @@ gem 'jbuilder', '~> 2.0'
 # bundle exec rake doc:rails generates the API under doc/api.
 gem 'sdoc', '~> 0.4.0', group: :doc
 
-gem 'mongo_mapper'
-gem 'bson_ext'
+#gem 'mongo_mapper'
+gem 'mongoid', github: 'mongoid/mongoid'
+gem 'mongoid-paperclip'
+
+# Chart Gem
+gem "chartkick"
 
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'

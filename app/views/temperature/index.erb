@@ -1,0 +1,17 @@
+<h1>Temperature</h1>
+
+<div id="temp_content">
+	<section>
+		<h2>
+			Current temperature
+		</h2>
+		<div id="recent_temp">
+			<%= recent_temp.temp_c %>&deg;C
+		</div>
+	</section>
+
+	<section>
+		<h2> Temperature History</h2>
+		<%= line_chart [{name: "Temperature", data: series_c}], library: {curveType: "none", pointSize: 2}  %> 
+	</section>
+</div>>
