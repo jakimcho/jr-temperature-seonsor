@@ -50,6 +50,7 @@ GEM
     binding_of_caller (0.7.2)
       debug_inspector (>= 0.0.1)
     bson (3.2.6)
+    bson_ext (1.5.1)
     builder (3.2.2)
     byebug (8.0.1)
     chartkick (1.4.1)
@@ -166,6 +167,7 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
+  bson_ext
   byebug
   chartkick
   coffee-rails (~> 4.1.0)

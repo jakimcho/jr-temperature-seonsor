@@ -39,4 +39,12 @@ Rails.application.configure do
 
   # Raises error for missing translations
   # config.action_view.raise_on_missing_translations = true
+  config.cache_classes = true
+  config.consider_all_requests_local       = false
+  config.action_controller.perform_caching = true
+  config.serve_static_files = true
+  config.assets.compress = true
+  config.assets.compile = true
+  config.assets.precompile =  ['*.js', '*.css', '*.css.erb'] 
+  config.assets.precompile += %w( chartkick.js )
 end

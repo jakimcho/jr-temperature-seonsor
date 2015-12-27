@@ -10,6 +10,7 @@ module TemperatureHelper
   end
 
   def recent_temp
-    @temperature.last
+    puts "From helper" + @temperature.last.inspect
+    @temperature.order_by([:time, :desc]).last
   end
 end

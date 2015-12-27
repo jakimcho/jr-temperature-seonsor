@@ -24,9 +24,10 @@ gem 'sdoc', '~> 0.4.0', group: :doc
 #gem 'mongo_mapper'
 gem 'mongoid', github: 'mongoid/mongoid'
 gem 'mongoid-paperclip'
+gem 'bson_ext'
 
 # Chart Gem
-gem "chartkick"
+gem 'chartkick'
 
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'

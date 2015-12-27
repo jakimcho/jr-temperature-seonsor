@@ -6,7 +6,7 @@
 			Current temperature
 		</h2>
 		<div id="recent_temp">
-			<%= recent_temp.temp_c %>&deg;C
+			<%= recent_temp.temp_c %>&deg; <%= Time.at(recent_temp.time)%>
 		</div>
 	</section>
 
@@ -14,4 +14,4 @@
 		<h2> Temperature History</h2>
 		<%= line_chart [{name: "Temperature", data: series_c}], library: {curveType: "none", pointSize: 2}  %> 
 	</section>
-</div>>
+</div>
